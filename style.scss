@@ -16,11 +16,10 @@
     user-select: none;
 }
 
-body {
+html {
     text-align: center;
     min-height: 100vh;
-    background: url('https://images.pexels.com/photos/3912365/pexels-photo-3912365.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat 0% 0%/ cover;
-    // filter: invert(1);
+    background: url(https://i.ibb.co/CHXz86T/hospital.jpg) no-repeat 0% 0%/cover;
 
     #endScreen {
         position: absolute;

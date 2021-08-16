@@ -47,7 +47,7 @@ function start() {
 
     const youWin = () => {
         let accuracy = Math.round(count / daysLeft * 100);
-        endSreen.innerHTML = `<div class="youWin">bravo ! tu as atomisé cette merde<br/><span>précision : ${accuracy}%</span></div>`
+        endSreen.innerHTML = `<div class="youWin">Well done ! You overcome this motherfucker<br/><span>précision : ${accuracy}%</span></div>`
         endSreen.style.visibility = 'visible';
         endSreen.style.opacity = '1';
         loopPlay = false;
