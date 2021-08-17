@@ -38,7 +38,7 @@ function start() {
     };
 
     const gameOver = () => {
-        endSreen.innerHTML = `<div class="gameOver">Loser<br/>score : ${count} </div>`;
+        endSreen.innerHTML = `<div class="gameOver">Game over<br/>score : ${count} </div>`;
         endSreen.style.visibility = 'visible';
         endSreen.style.opacity = '1';
         loopPlay = false;
