@@ -4,7 +4,7 @@ const days = document.getElementById('days');
 const endSreen = document.getElementById('endScreen');
 
 daysLeft = 60;
-gameOverNumber = 85;
+gameOverNumber = 50;
 loopPlay = false;
 
 function start() {
@@ -38,7 +38,7 @@ function start() {
     };
 
     const gameOver = () => {
-        endSreen.innerHTML = `<div class="gameOver">Game over<br/>score : ${count} </div>`;
+        endSreen.innerHTML = `<div class="gameOver">Loser<br/>score : ${count} </div>`;
         endSreen.style.visibility = 'visible';
         endSreen.style.opacity = '1';
         loopPlay = false;
@@ -47,7 +47,7 @@ function start() {
 
     const youWin = () => {
         let accuracy = Math.round(count / daysLeft * 100);
-        endSreen.innerHTML = `<div class="youWin">Well done ! You overcome this motherfucker<br/><span>précision : ${accuracy}%</span></div>`
+        endSreen.innerHTML = `<div class="youWin">Well done ! You overcome this Monster<br/><span>précision : ${accuracy}%</span></div>`
         endSreen.style.visibility = 'visible';
         endSreen.style.opacity = '1';
         loopPlay = false;
