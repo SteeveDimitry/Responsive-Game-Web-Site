@@ -12,13 +12,13 @@
   user-select: none;
 }
 
-body {
+html {
   text-align: center;
   min-height: 100vh;
   background: url(https://i.ibb.co/CHXz86T/hospital.jpg) no-repeat 0% 0%/cover;
 }
 
-body #endScreen {
+html #endScreen {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -33,7 +33,7 @@ body #endScreen {
   transition: 0.1s;
 }
 
-body #endScreen .gameOver {
+html #endScreen .gameOver {
   margin: 10rem auto 0;
   width: 70%;
   line-height: 9rem;
@@ -44,7 +44,7 @@ body #endScreen .gameOver {
   box-shadow: 0 10px 15px black;
 }
 
-body #endScreen .youWin {
+html #endScreen .youWin {
   margin: 7rem auto 0;
   width: 70%;
   line-height: 9rem;
@@ -57,13 +57,13 @@ body #endScreen .youWin {
   text-shadow: 4px 2px 1px rgba(211, 4, 4, 0.808);
 }
 
-body #endScreen .youWin span {
+html #endScreen .youWin span {
   color: #e90000;
   font-weight: bold;
   text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.808);
 }
 
-body #start {
+html #start {
   margin: 2rem 2rem 0;
   padding: 1rem 2rem;
   background: rgba(252, 0, 0, 0.699);
@@ -81,7 +81,7 @@ body #start {
   animation: shadow-pop-br 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
-body #start:active {
+html #start:active {
   -webkit-animation: shadow-back 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation: shadow-back 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
@@ -150,14 +150,14 @@ body #start:active {
   }
 }
 
-body #start:hover {
+html #start:hover {
   -webkit-box-shadow: 1px 1px 1px #333, inset 0 0 0 40px #ff0000c5;
   box-shadow: 1px 1px 1px #333, inset 0 0 0 40px #ff0000c5;
   color: black;
   background: rgba(250, 136, 43, 0.966);
 }
 
-body #canvas {
+html #canvas {
   cursor: crosshair;
   border: none;
   border-top: 1px rgba(66, 0, 0, 0.561) solid;
@@ -172,7 +172,7 @@ body #canvas {
   width: 500px;
 }
 
-body #canvas .virus {
+html #canvas .virus {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -183,11 +183,11 @@ body #canvas .virus {
   animation: virusAnim 14s forwards;
 }
 
-body #canvas .virus:hover {
+html #canvas .virus:hover {
   --scaler: 1.05;
 }
 
-body #canvas .virus:active {
+html #canvas .virus:active {
   --scaler: 0.95;
 }
 
@@ -215,26 +215,26 @@ body #canvas .virus:active {
   }
 }
 
-body .scoreboard {
+html .scoreboard {
   color: #eee;
   padding-bottom: 1rem;
 }
 
-body .scoreboard .kills {
+html .scoreboard .kills {
   font-size: 2rem;
 }
 
-body .scoreboard .kills #score {
+html .scoreboard .kills #score {
   font-weight: bold;
   font-size: 3rem;
   color: #ff0000e1;
 }
 
-body .scoreboard .confinement {
+html .scoreboard .confinement {
   font-size: 1.6rem;
 }
 
-body .scoreboard .confinement #days {
+html .scoreboard .confinement #days {
   color: #ff0000e1;
 }
 
